@@ -74,8 +74,8 @@ fn main() -> Result<()> {
 
     println!("\nGenerating Andaman cfg");
     conf.hcl()?;
-    println!("[もしもし]");
-    run(vec!["anda", "build"])?;
+    // println!("[もしもし]");
+    // run(vec!["anda", "build"])?;
     Ok(())
 }
 

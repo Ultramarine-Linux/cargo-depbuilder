@@ -17,7 +17,7 @@ pub struct Project {
 #[derive(Serialize, PartialEq, Eq)]
 pub struct RpmBuild {
     pub spec: PathBuf,
-    pub mode: String,
+    // pub mode: String,
     pub package: String,
     pub build_deps: Vec<String>,
 }
@@ -34,7 +34,7 @@ impl AndaConfig {
             Project {
                 rpmbuild: RpmBuild {
                     spec: PathBuf::from(format!("{}/{}", name, specfile)),
-                    mode: String::from("cargo"),
+                    // mode: String::from("rpmbuild"),
                     package: format!("rust-{}", name).to_string(),
                     build_deps,
                 },
